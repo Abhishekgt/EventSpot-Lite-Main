@@ -30,7 +30,7 @@ h1 + h1 {
 }
 
 /* Styling for the Pagination buttons */
-button.pagination {
+button.pagination-button {
     border-radius: 50%; /* Ensures round buttons */
     width: 36px; /* Width set for round shape */
     height: 36px; /* Height set for round shape */
@@ -47,25 +47,25 @@ button.pagination {
 }
 
 /* Styles for number buttons when active */
-button.pagination.active {
+button.pagination-button.active {
     background-color: #4f46e5; /* Darker blue for active button */
     color: #ffffff; /* White text for contrast */
 }
 
 /* Hover effect for number buttons */
-button.pagination:hover {
+button.pagination-button:hover {
     background-color: #ffd600; /* Brighter yellow on hover */
     color: #333333; /* Dark text for contrast */
     box-shadow: 0px 0px 10px rgba(255, 235, 59, 0.4); /* Shadow effect on hover */
 }
 
 /* Additional styling for unselected pagination buttons */
-button.pagination.bg-gray-200 {
+button.pagination-button.bg-gray-200 {
     background-color: #cbd5e1; /* Lighter gray for unselected */
 }
 
 /* Hover effect for unselected pagination buttons */
-button.pagination.bg-gray-200:hover {
+button.pagination-button.bg-gray-200:hover {
     box-shadow: 0px 0px 10px rgba(255, 235, 59, 0.4); /* Shadow effect on hover */
 }
 
@@ -80,4 +80,12 @@ input[type="text"]:focus {
    border-color: #ffd600;
    outline: none;
    box-shadow: 0px 0px 8px rgba(255, 214, 0, 0.5);
+}
+
+/* Styling for the Pagination container */
+.pagination {
+   display: flex; /* Use flexbox for horizontal alignment */
+   justify-content: center; /* Center align the buttons */
+   gap: 8px; /* Optional: Add some space between buttons */
+   margin-top: 16px; /* Add some spacing above the pagination */
 }

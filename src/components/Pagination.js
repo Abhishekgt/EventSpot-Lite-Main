@@ -3,7 +3,7 @@ const Pagination = ({ totalPages, currentPage, onPageChange }) => (
       {[...Array(totalPages)].map((_, index) => (
          <button
             key={index}
-            className={`pagination-button ${index === currentPage ? 'active' : ''} rounded-full`} // Add rounded-full class
+            className={`pagination-button rounded-full ${index === currentPage ? 'active' : ''}`} // Add rounded-full class
             onClick={() => onPageChange(index)}
          >
             {index + 1}
@@ -11,5 +11,5 @@ const Pagination = ({ totalPages, currentPage, onPageChange }) => (
       ))}
    </div>
 );
- 
+
 export default Pagination;
